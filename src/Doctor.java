@@ -1,5 +1,5 @@
 public class Doctor {
-    int id;
+    static int id = 0; //Autoincrementable y al ser estatica prevalece en todo el problema
     String name;
     String speciality;
 
@@ -9,6 +9,7 @@ public class Doctor {
      */
     Doctor(){
         System.out.println("Construyendo el metodo Doctor");
+        id++;
     }
 
     /** Se instacia el metodo constructor asignandole variables
@@ -25,5 +26,9 @@ public class Doctor {
      * */
     public void showName(){
         System.out.println(name);
+    }
+    /**Imprime el ID del Doctor*/
+    public void showId(){
+        System.out.println("ID Doctor: " + id);
     }
 }
