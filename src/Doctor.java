@@ -9,15 +9,18 @@ public class Doctor {
      */
     Doctor(){
         System.out.println("Construyendo el metodo Doctor");
-        id++;
     }
 
     /** Se instacia el metodo constructor asignandole variables
      * se da pie a una nueva forma de enviar variables a los objetos
      * @param name Se le asigna un nombre al Doctor
      */
-    Doctor(String name){
+    Doctor(String name, String speciality){
+        id++;
+        this.name = name;
+        this.speciality = speciality;
         System.out.println("Doctor: " + name);
+        System.out.println("Speciality: "+ speciality);
     }
 
     /**Comportamientos del Doctor

@@ -7,9 +7,9 @@ public class Main {
         myDoctor.showName();
         myDoctor.showId();
 
-        Doctor myDoctorAnn = new Doctor();
+        Doctor myDoctorAnn = new Doctor("Ann","Neurología");
         myDoctorAnn.showId();
-        showMenu();
+        //showMenu();
     }
 
 }

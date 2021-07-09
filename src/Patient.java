@@ -4,7 +4,7 @@ public class Patient {
     double weight, height;
 
     /**Metodo constructos de Patient
-     * Imprimir el nombre e Email
+     * Imprime el nombre e Email
      * @param name Es el nombre del Paciente
      * @param email Es el email del Paciente
      */
