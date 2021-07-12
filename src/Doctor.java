@@ -1,6 +1,7 @@
 public class Doctor {
     static int id = 0; //Autoincrementable y al ser estatica prevalece en todo el problema
     String name;
+    String email;
     String speciality;
 
     /** Constructor Doctor
