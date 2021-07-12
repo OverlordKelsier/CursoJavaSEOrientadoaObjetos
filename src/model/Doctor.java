@@ -8,7 +8,7 @@ import java.util.Date;
 public class Doctor extends User {
 
     private String  speciality;
-
+    private ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
     /** Se instacia el método constructor asignandole variables
      * se da pie a una nueva forma de enviar variables a los objetos
      */
@@ -16,7 +16,7 @@ public class Doctor extends User {
         super(name,email);
     }
 
-    ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
+
     public void addAvailableAppointment (String date, String time){
         availableAppointments.add(new Doctor.AvailableAppointment(date,time));
     }
@@ -51,11 +51,11 @@ public class Doctor extends User {
             this.time = time;
         }
 
-        public Date getDate() {
+        public Date getDate(String DATE) {
             return date;
         }
 
-        public String getDate(String DATE) {
+        public String getDate() {
             return format.format(date);
         }
 
