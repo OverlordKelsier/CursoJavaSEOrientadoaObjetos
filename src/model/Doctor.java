@@ -28,6 +28,11 @@ public class Doctor extends User {
                 "\nAvailable=" + availableAppointments;
     }
 
+    @Override
+    public void showDataUser() {
+        System.out.println("Hospital : CR");
+    }
+
     /** Clase anidada*/
     public static class  AvailableAppointment{
         private int id;
