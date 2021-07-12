@@ -14,7 +14,6 @@ public class Main {
         }
 
         Doctor myDoctorAnn = new Doctor("Ann","Neurología");
-        myDoctorAnn.showId();
         //showMenu();
 
         Patient patient = new Patient("Ale", "ale@a.com");

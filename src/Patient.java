@@ -1,6 +1,6 @@
-public class Patient {
-    static int id;
-    private String name, email, address, phoneNumber, birthday, blood;
+public class Patient extends User{
+
+    private String birthday, blood;
     private double weight, height;
 
     /**Metodo constructor de Patient
@@ -9,10 +9,9 @@ public class Patient {
      * @param email Es el email del Paciente
      */
     Patient(String name, String email){
-        this.name = name;
-        this.email = email;
+        super(name,email);
         System.out.println("Nombre: " + name + " Email: " + email);
-        id++;
+
     }
 
     /** Todos los Getters y Setters autogenerados por el IDE
@@ -24,49 +23,6 @@ public class Patient {
     }
     public String getWeight(){
         return this.weight + "Kg.";
-    }
-
-    public static int getId() {
-        return id;
-    }
-
-    public static void setId(int id) {
-        Patient.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.length()>8){
-            System.out.println("debes poner 8 digitos máximo");
-        }else if (phoneNumber.length() == 8){
-        this.phoneNumber = phoneNumber;}
     }
 
     public String getBirthday() {
