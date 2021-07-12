@@ -12,7 +12,6 @@ public class Patient extends User{
      */
      public Patient(String name, String email){
         super(name,email);
-        System.out.println("Nombre: " + name + " Email: " + email);
 
     }
 

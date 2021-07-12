@@ -6,6 +6,8 @@ import model.Patient;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static ui.UIDoctorMenu.showDoctorMenu;
+
 public class UIMenu {
     public static final String[] MONTHS = {"Enero","Febrero","Marzo","Abril","Mayo","Junio",
             "Julio","Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
@@ -28,11 +30,13 @@ public class UIMenu {
 
             switch (response){
                 case 1:
-                    System.out.println("model.Doctor");
+                    System.out.println("Doctor");
+                    response = 0;
+                    authUser(1);
                     break;
                 case 2:
                     response = 0;
-                    showPatientMenu();
+                    authUser(2);
 
                     break;
                 case 0:
@@ -99,6 +103,7 @@ public class UIMenu {
                         //Obtener el usuario logeado
                         doctorLogged = d;
                         //showDoctorMenu
+                        showDoctorMenu();
                     }
                 }
             }
