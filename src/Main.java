@@ -14,6 +14,16 @@ public class Main {
         System.out.println(myDoctor);
         User user = new Doctor("Ana", "A@ana.com");
         user.showDataUser();
+        User userpa = new Patient("Ana", "A@ana.com");
+        userpa.showDataUser();
+        User user1 = new User("Ana", "A@ana.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doc");
+                System.out.println("CA");
+            }
+        };
+        user1.showDataUser();
 
 
         /*for (Doctor.AvailableAppointment availableAppointment: myDoctor.getAvailableAppointments()){
