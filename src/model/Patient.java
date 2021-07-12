@@ -1,14 +1,16 @@
+package model;
+
 public class Patient extends User{
 
     private String birthday, blood;
     private double weight, height;
 
-    /**Metodo constructor de Patient
+    /**Metodo constructor de model.Patient
      * Imprime el nombre e Email
      * @param name Es el nombre del Paciente
      * @param email Es el email del Paciente
      */
-    Patient(String name, String email){
+     public Patient(String name, String email){
         super(name,email);
         System.out.println("Nombre: " + name + " Email: " + email);
 

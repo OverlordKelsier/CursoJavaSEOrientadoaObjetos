@@ -1,14 +1,16 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor extends User{
+public class Doctor extends User {
 
     private String  speciality;
 
     /** Se instacia el metodo constructor asignandole variables
      * se da pie a una nueva forma de enviar variables a los objetos
      */
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name,email);
     }
 
